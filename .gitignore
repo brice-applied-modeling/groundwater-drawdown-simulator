@@ -1,10 +1,230 @@
-# Python-generated files
+# =============================================================================
+# Python
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[oc]
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
 build/
 dist/
 wheels/
-*.egg-info
+*.egg-info/
+.eggs/
+*.egg
+MANIFEST
+sdist/
 
-# Virtual environments
-.venv
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =============================================================================
+# Virtual Environments
+# =============================================================================
+
+# uv / venv / virtualenv
+.venv/
+venv/
+env/
+ENV/
+.env/
+
+# uv lockfile is intentionally committed; ignore the cache
+.uv/
+
+# conda
+.conda/
+conda-meta/
+# Named conda envs stored inside the project (non-default pattern)
+envs/
+
+# pyenv
+.python-version
+
+# =============================================================================
+# Package / Dependency Managers
+# =============================================================================
+
+# uv — the lockfile (uv.lock) should be committed; ignore build artifacts
+__pypackages__/
+
+# pip
+pip-wheel-metadata/
+
+# =============================================================================
+# Testing
+# =============================================================================
+
+.pytest_cache/
+.tox/
+.nox/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+coverage.json
+*.cover
+*.hypothesis/
+junit*.xml
+test-results/
+
+# =============================================================================
+# Type Checkers & Linters
+# =============================================================================
+
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# =============================================================================
+# Build & Documentation Tools
+# =============================================================================
+
+docs/_build/
+docs/api/
+site/
+.pdoc/
+.sphinx/
+
+# =============================================================================
+# Jupyter / Notebooks
+# =============================================================================
+
+# Checkpoint files generated on every save — never commit these
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Notebook output cells can contain large data, secrets, or non-reproducible
+# state. Strip outputs before committing (use nbstripout or similar).
+# Uncomment the line below to ignore notebooks entirely instead.
+# *.ipynb
+
+# nbconvert output
+*.nbconvert/
+
+# Papermill output notebooks
+*_output.ipynb
+
+# =============================================================================
+# JetBrains IDEs (PyCharm, DataSpell, IntelliJ, etc.)
+# =============================================================================
+
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Shelf / local history — machine-specific, not shareable
+.idea/shelf/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries/
+.idea/caches/
+
+# =============================================================================
+# VS Code
+# =============================================================================
+
+.vscode/
+# Uncomment to track shared workspace settings:
+# !.vscode/settings.json
+# !.vscode/extensions.json
+# !.vscode/launch.json
+*.code-workspace
+
+# =============================================================================
+# Spyder IDE
+# =============================================================================
+.spyproject
+
+# =============================================================================
+# Operating System
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+
+# =============================================================================
+# Secrets & Environment Variables
+# =============================================================================
+
+# Never commit credentials, API keys, or local config
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p12
+secrets/
+credentials/
+
+# =============================================================================
+# Logs & Temporary Files
+# =============================================================================
+
+*.log
+*.log.*
+logs/
+*.tmp
+*.temp
+*.swp
+*.swo
+.cache/
+
+# =============================================================================
+# Data & Large Files
+# =============================================================================
+
+# Ignore raw/processed data directories by default — use DVC or similar for
+# versioning large datasets rather than storing them in git.
+data/raw/
+data/processed/
+data/interim/
+data/external/
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.npy
+*.npz
+data/
+
+# =============================================================================
+# Project-specific
+# =============================================================================
+
+# Add project-specific ignores below this line
+
