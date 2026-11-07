@@ -20,28 +20,70 @@ groundwater_drawdown/
 ├── .gitignore
 ├── .gitattributes
 │
+├── data/
+│   ├── raw/
+│   ├── synthetic/
+│   └── processed/
+│
+├── docs/
+│   ├── 00_overview/
+│   │   └── 00_project_overview.md
+│   │
+│   ├── 01_project_structure/
+│   │   └── 00_project_structure.md
+│   │
+│   ├── 02_engineering_documentation/
+│   │   ├── 00_mathematical_background.md
+│   │   ├── 01_model_assumptions.md
+│   │   ├── 02_validation_plan.md
+│   │   └── 03_development_log.md
+│   │
+│   └── 03_checklists/
+│       └── 00_checklist.md
+│   
 ├── src/
 │   └── groundwater_drawdown/
 │       ├── __init__.py
-│       ├── theis.py
-│       └── validation.py
+│       │
+│       ├── models/
+│       │   ├── __init__.py
+│       │   └── theis.py
+│       │
+│       ├── numerical/
+│       │   └── __init__.py
+│       │
+│       ├── calibration/
+│       │   └── __init__.py
+│       │
+│       ├── uncertainty/
+│       │   └── __init__.py
+│       │
+│       ├── analysis/
+│       │   └── __init__.py
+│       │
+│       ├── visualization/
+│       │   └── __init__.py
+│       │
+│       └── utils/
+│           └── __init__.py
 │
 ├── experiments/
-│   ├── 01_single_point.py
-│   ├── 02_time_drawdown.py
-│   ├── 03_radial_profile.py
-│   └── 04_parameter_sensitivity.py
+│   ├── 01_deterministic/
+│   ├── 02_sensitivity/
+│   ├── 03_calibration/
+│   ├── 04_monte_carlo/
+│   └── 05_bayesian/
 │
 ├── tests/
-│   ├── test_theis.py
-│   └── test_validation.py
-│
-├── data/
-│   └── README.md
+│   ├── test_models/
+│   ├── test_numerical/
+│   ├── test_calibration/
+│   └── test_uncertainty/
 │
 └── results/
     ├── figures/
-    └── tables/
+    ├── tables/
+    └── reports/
 ```
 
 **Not shown in Git:** `.venv/`, `.spyproject/` (if created), `__pycache__/`, `.pytest_cache/`, and other temporary files.
@@ -52,25 +94,41 @@ The `results/` directory is for generated outputs. Keep directory placeholders i
 
 | Path | Responsibility |
 |---|---|
-| `README.md` | Short description, installation, running experiments, and example outputs |
-| `PROJECT_OVERVIEW.md` | Problem statement, scientific model, assumptions, scope, and acceptance criteria |
-| `PROJECT_STRUCTURE.md` | Architecture, module responsibilities, and development workflow |
-| `development_log.md` | Date-stamped notes on what you wrote, learned, tested, and corrected |
-| `pyproject.toml` | Python project metadata and declared dependencies |
-| `uv.lock` | Locked dependency resolution for reproducibility |
-| `.python-version` | Pinned Python version for `uv` |
-| `.gitignore` | Exclusions for environments, caches, IDE metadata, and generated output |
-| `.gitattributes` | Consistent Git text and line-ending behavior across Windows and Linux |
-| `src/groundwater_drawdown/theis.py` | Pure scientific calculations: dimensionless argument, well function, drawdown |
-| `src/groundwater_drawdown/validation.py` | Input validation and clear error messages |
-| `experiments/01_single_point.py` | One complete calculation with readable printed results |
-| `experiments/02_time_drawdown.py` | Time arrays, computed results, and time–drawdown plot |
-| `experiments/03_radial_profile.py` | Radial arrays and drawdown profiles |
-| `experiments/04_parameter_sensitivity.py` | Controlled parameter comparisons and sensitivity figures |
-| `tests/` | Automated numerical and input-validation tests |
-| `data/` | Optional documented input datasets; not required initially |
-| `results/figures/` | Saved PNG or other figure exports |
-| `results/tables/` | Saved CSV or other tabular outputs |
+| `README.md` | Repository introduction, installation instructions, running experiments, project status, and example outputs |
+| `pyproject.toml` | Python project metadata, dependencies, and development tool configuration |
+| `uv.lock` | Locked dependency versions for reproducible environments |
+| `.python-version` | Pinned Python version used by uv |
+| `.gitignore` | Excludes virtual environments, caches, Spyder metadata, and generated files |
+| `.gitattributes` | Consistent Git line-ending behavior across Windows and Linux |
+| `docs/00_project_overview.md` | Engineering problem statement, project objectives, scope, and acceptance criteria |
+| `docs/01_mathematical_background.md` | Theis equations, groundwater flow theory, parameter definitions, and units |
+| `docs/02_model_assumptions.md` | Hydrogeologic assumptions, model limitations, and applicability |
+| `docs/03_validation_plan.md` | Analytical benchmarks, physical behavior checks, numerical tolerances, and validation criteria |
+| `docs/development_log.md` | Date-stamped implementation notes, debugging observations, lessons learned, and decisions |
+| `data/raw/` | Original observed groundwater measurements or external reference datasets |
+| `data/synthetic/` | Generated pumping-test datasets with known model parameters |
+| `data/processed/` | Cleaned and transformed datasets used for calibration or analysis |
+| `src/groundwater_drawdown/__init__.py` | Defines the groundwater_drawdown Python package |
+| `src/groundwater_drawdown/models/` | Physical groundwater models and analytical solutions |
+| `src/groundwater_drawdown/models/theis.py` | Theis well function, dimensionless parameter, and transient drawdown calculations |
+| `src/groundwater_drawdown/numerical/` | Shared numerical algorithms and solvers when required by future models |
+| `src/groundwater_drawdown/calibration/` | Parameter estimation, optimization, fitting observed drawdown data, and calibration diagnostics |
+| `src/groundwater_drawdown/uncertainty/` | Probability distributions, Monte Carlo simulation, Bayesian inference, and uncertainty propagation |
+| `src/groundwater_drawdown/analysis/` | Sensitivity analysis, scenario comparisons, and interpretation of groundwater model results |
+| `src/groundwater_drawdown/visualization/` | Reusable plotting functions for drawdown curves, parameter comparisons, and uncertainty results |
+| `src/groundwater_drawdown/utils/` | Shared input validation, unit conversions, and general-purpose utilities |
+| `experiments/01_deterministic/` | Single-point drawdown calculations, time-drawdown curves, and radial drawdown profiles |
+| `experiments/02_sensitivity/` | Controlled experiments varying transmissivity, storativity, pumping rate, and distance |
+| `experiments/03_calibration/` | Parameter estimation experiments using synthetic or observed pumping-test data |
+| `experiments/04_monte_carlo/` | Stochastic simulations evaluating uncertainty in groundwater drawdown predictions |
+| `experiments/05_bayesian/` | Bayesian parameter estimation, posterior analysis, and predictive uncertainty experiments |
+| `tests/test_models/` | Automated tests for physical equations, expected drawdown behavior, and input validation |
+| `tests/test_numerical/` | Numerical accuracy, convergence, and solver verification tests |
+| `tests/test_calibration/` | Parameter recovery tests, fitting accuracy, and calibration behavior |
+| `tests/test_uncertainty/` | Statistical sampling, reproducibility, and uncertainty propagation tests |
+| `results/figures/` | Exported hydrogeologic plots, sensitivity figures, and probability distributions |
+| `results/tables/` | CSV files containing simulation outputs, parameter estimates, and statistical summaries |
+| `results/reports/` | Scientific interpretation, validation summaries, and experiment reports |
 
 ## 4. Module boundaries
 
