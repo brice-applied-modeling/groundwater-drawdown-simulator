@@ -63,3 +63,34 @@
 - [ ] Update the README with actual completed capabilities
 - [ ] Document lessons learned and remaining limitations
 - [ ] Commit the completed work to Git
+
+## Phase 1 Workflow
+
+For the first few sessions, use a single experiment script, such as
+`experiments/01_deterministic/run_drawdown.py`. Write the calculations,
+execute them, and inspect intermediate values in Spyder's Variable Explorer.
+
+Once the calculation works and is understood, move the reusable mathematics
+into a function in `src/groundwater_drawdown/models/theis.py`. This allows for
+practice in writing functions, imports, and modular code while maintaining the
+planned project architecture.
+
+## What counts as completing Phase 1?
+
+The first meaningful milestone is achieved when the following is achieved:
+
+- [ ] Able to explain the Theis equation and its assumptions.
+- [ ] Write a Python function that calculates drawdown.
+- [ ] Call that function with different inputs.
+- [ ] Produce a drawdown-versus-time plot.
+- [ ] Verify the results against a reference calculation.
+- [ ] Explain why the resulting curve behaves as it does.
+
+That's a complete, useful scientific programming accomplishment in its own right.
+
+## Suggested first coding session
+
+Work only through Phases 1–3 of the development checklist, stopping once
+a validated single-point drawdown calculation has been completed. Don't rush
+into Monte Carlo just because it's more interesting. The deterministic model is
+the foundation everything else will depend on.
