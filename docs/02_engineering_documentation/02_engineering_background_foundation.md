@@ -27,10 +27,11 @@ withdrawing the groundwater aquifer.
 - **Storativity:** The capacity of an aquifer to store or release water. The 
 storativity of a confined aquifer remains saturated and unchanged when there is
 a unit change in the potentiometric surface (Woessner & Poeter, 2020).
-- **Radial Distance:** 
-- **Confined Aquifer:**
-- **Homogeneous:**
-- **Isotropic:**
+- **Radial Distance:** Distance from a pumping well to a point in the aquifer
+- **Confined Aquifer:** The aquifer is bounded above and below by impermeable layers, known as aquitards (Theis, 1935).
+- **Homogeneous:** An aquifer's hydraulic properties are uniform throughout its volume (Freeze & Cherry, 1979).
+- **Isotropic:** An aquifer's hydraulic properties are the same in all directions at a given point. This implies that the hydraulic conductivity is independent of the direction of flow. In an isotropic aquifer, water will flow at the same rate in any direction, assuming the same hydraulic gradient (Freeze & Cherry, 1979).
+- **Theis Equation:** 
 - **Wellbore Storage:**
 - **Well losses:**
 - **Recharge:**
@@ -58,3 +59,20 @@ of Groundwater Flow*. The Groundwater Project.
 **Section 6.4:** Properties of Aquifers and Confining Units.
 
 [View Online](https://books.gw-project.org/hydrogeologic-properties-of-earth-materials-and-principles-of-groundwater-flow/chapter/properties-of-aquifers-and-confining-units/)
+
+---
+
+Freeze, R. A., & Cherry, J. A. (1979). Groundwater. Prentice-Hall. https://fc79.gw-project.org/english/chapter-2/
+
+Relevant section: Chapter 2, Section 2.4, Heterogeneity and Anisotropy of Hydraulic Conductivity.
+
+---
+
+Theis, C. V. (1935). The relation between the lowering of the piezometric surface and the rate and duration of discharge of a well using ground-water storage. Transactions, American Geophysical Union, 16(2), 519–524. https://doi.org/10.1029/TR016i002p00519
+
+---
+
+LMNO Engineering, Research, and Software, Ltd. (n.d.). Theis equation for groundwater pumping. https://www.lmnoeng.com/Education/Theis-equation-groundwater-pumping.php
+
+---
+
