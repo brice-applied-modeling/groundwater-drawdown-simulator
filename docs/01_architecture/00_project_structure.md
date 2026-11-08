@@ -29,14 +29,17 @@ groundwater_drawdown/
 │   ├── 00_overview/
 │   │   └── 00_project_overview.md
 │   │
-│   ├── 01_project_structure/
+│   ├── 01_architecture/
 │   │   └── 00_project_structure.md
 │   │
 │   ├── 02_engineering_documentation/
-│   │   ├── 00_mathematical_background.md
-│   │   ├── 01_model_assumptions.md
-│   │   ├── 02_validation_plan.md
-│   │   └── 03_development_log.md
+│   │   ├── 00_groundwater_initial_test_scenario.md
+│   │   ├── 01_engineering_background_outline.md
+│   │   ├── 02_engineering_background_foundation.md
+│   │   ├── 03_mathematical_background.md
+│   │   ├── 04_model_assumptions.md
+│   │   ├── 05_validation_plan.md
+│   │   └── 06_development_log.md
 │   │
 │   └── 03_checklists/
 │       └── 00_checklist.md
