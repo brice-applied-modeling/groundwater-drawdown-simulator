@@ -1,3 +1,4 @@
+
 # Groundwater Drawdown Engineering Background
 
 The purpose of this document, is to research, understand, and document the
@@ -27,32 +28,33 @@ interpretable scientific software.
 
 - **Drawdown:** The lowering of the water level due to pumping or other means of 
 withdrawing the groundwater aquifer.
-- **Transmissivity:** The capacity of the aquifer to transmit water(Woessner & Poeter, 2020)
+- **Transmissivity:** The capacity of the aquifer to transmit water{cite:p}`woessner2020`
 - **Storativity:** The capacity of an aquifer to store or release water. The 
 storativity of a confined aquifer remains saturated and unchanged when there is
-a unit change in the potentiometric surface (Woessner & Poeter, 2020).
+a unit change in the potentiometric surface {cite:p}`woessner2020`.
 - **Radial Distance:** Distance from a pumping well to a point in the aquifer
 - **Confined Aquifer:** The aquifer is bounded above and below by impermeable
-layers, known as aquitards (Theis, 1935).
+layers, known as aquitards {cite:p}`theis1935`.
 - **Homogeneous:** An aquifer's hydraulic properties are uniform throughout its
-volume (Freeze & Cherry, 1979).
+volume {cite:p}`freeze1979`.
 - **Isotropic:** An aquifer's hydraulic properties are the same in all directions
 at a given point. This implies that the hydraulic conductivity is independent of
 the direction of flow. In an isotropic aquifer, water will flow at the same rate
-in any direction, assuming the same hydraulic gradient (Freeze & Cherry, 1979).
+in any direction, assuming the same hydraulic gradient {cite:p}`freeze1979`.
 - **Theis Equation:** A method that provides a mathematical framework for
 predicting how water levels in a confined aquifer decline over time due to
-pumping from a well (LMNO Engineering, Research, and Software, Ltd., n.d.).
+pumping from a well {cite:p}`lmno_theis`.
 - **Wellbore:** A cylindrical hole drilled into the earth's subsurface, serves
 as the crucial conduit for accessing subsurface resources, facilitating a wide
 array of operations ranging from oil and gas extraction to geothermal energy
-production and groundwater monitoring (Flyriver, n.d.).
+production and groundwater monitoring {cite:p}`flyriver_wellbore`.
 - **Wellbore Storage:** refers to the phenomenon where the pressure behavior in
 a well is influenced by the compressibility and volume of the fluid within the
 wellbore, particularly during the early stages of production or shut-in. This
 effect can lead to a time lag in the surface production rate compared to the
-actual rate at the sandface, complicating well test interpretations (Testwells, n.d.)
-- **Well losses:**
+actual rate at the sandface, complicating well test interpretations {cite:p}`testwells_storage`
+- **Well losses:** long-term water-level declines caused by sustained groundwater
+pumping {cite:p}`usgs_groundwater_depletion`.
 - **Recharge:**
 - **Leakage:**
 - **Boundary:**
@@ -68,46 +70,3 @@ actual rate at the sandface, complicating well test interpretations (Testwells, 
 - Drawdown evaluated at positive radial distances and positive elapsed times.
 
 ## Fundamentals of Groundwater Flow
-
-
-## References
-
-Woessner, W. W., & Poeter, E. P. (2020).
-*Hydrogeologic Properties of Earth Materials and Principles
-of Groundwater Flow*. The Groundwater Project.
-
-**Section 6.4:** Properties of Aquifers and Confining Units.
-
-[View Online](https://books.gw-project.org/hydrogeologic-properties-of-earth-materials-and-principles-of-groundwater-flow/chapter/properties-of-aquifers-and-confining-units/)
-
----
-
-Freeze, R. A., & Cherry, J. A. (1979). Groundwater. Prentice-Hall.
-[View Online](https://fc79.gw-project.org/english/chapter-2/)
-
-Relevant section: Chapter 2, Section 2.4, Heterogeneity and Anisotropy of
-Hydraulic Conductivity.
-
----
-
-Theis, C. V. (1935). The relation between the lowering of the piezometric
-surface and the rate and duration of discharge of a well using ground-water
-storage. Transactions, American Geophysical Union, 16(2), 519–524.
-[View Online](https://doi.org/10.1029/TR016i002p00519)
-
----
-
-LMNO Engineering, Research, and Software, Ltd. (n.d.). Theis equation for
-groundwater pumping.
-[View Online](https://www.lmnoeng.com/Education/Theis-equation-groundwater-pumping.php)
-
----
-
-
-Flyriver. (n.d.). *Wellbore*.
-[View Online](https://www.flyriver.com/g/wellbore)
-
----
-
-TestWells. (n.d.). *Wellbore storage*.
-[View Online](https://testwells.com/wellbore-storage)

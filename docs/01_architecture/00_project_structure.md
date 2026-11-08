@@ -41,8 +41,15 @@ groundwater_drawdown/
 │   │   ├── 05_validation_plan.md
 │   │   └── 06_development_log.md
 │   │
-│   └── 03_checklists/
-│       └── 00_checklist.md
+│   ├── 03_references/
+│   │   └── references.bib
+│   │
+│   ├── 04_checklists/
+│   │   └── 00_checklist.md
+│   │
+│   └── 99_research_downloads/
+│       └── groundwater_recharge/
+│           └── GroundwaterRechargeMechanisms1.pdf
 │   
 ├── src/
 │   └── groundwater_drawdown/
