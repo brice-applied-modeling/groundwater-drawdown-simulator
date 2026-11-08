@@ -31,7 +31,8 @@ a unit change in the potentiometric surface (Woessner & Poeter, 2020).
 - **Confined Aquifer:** The aquifer is bounded above and below by impermeable layers, known as aquitards (Theis, 1935).
 - **Homogeneous:** An aquifer's hydraulic properties are uniform throughout its volume (Freeze & Cherry, 1979).
 - **Isotropic:** An aquifer's hydraulic properties are the same in all directions at a given point. This implies that the hydraulic conductivity is independent of the direction of flow. In an isotropic aquifer, water will flow at the same rate in any direction, assuming the same hydraulic gradient (Freeze & Cherry, 1979).
-- **Theis Equation:** 
+- **Theis Equation:** A method that provides a mathematical framework for predicting how water levels in a confined aquifer decline over time due to pumping from a well (LMNO Engineering, Research, and Software, Ltd., n.d.).
+- **Wellbore:** A cylindrical hole drilled into the earth's subsurface, serves as the crucial conduit for accessing subsurface resources, facilitating a wide array of operations ranging from oil and gas extraction to geothermal energy production and groundwater monitoring (Flyriver, n.d.).
 - **Wellbore Storage:**
 - **Well losses:**
 - **Recharge:**
@@ -73,6 +74,12 @@ Theis, C. V. (1935). The relation between the lowering of the piezometric surfac
 ---
 
 LMNO Engineering, Research, and Software, Ltd. (n.d.). Theis equation for groundwater pumping. https://www.lmnoeng.com/Education/Theis-equation-groundwater-pumping.php
+
+---
+
+
+Flyriver. (n.d.). *Wellbore*.
+https://www.flyriver.com/g/wellbore
 
 ---
 
