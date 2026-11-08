@@ -28,10 +28,10 @@ interpretable scientific software.
 
 - **Drawdown:** The lowering of the water level due to pumping or other means of 
 withdrawing the groundwater aquifer.
-- **Transmissivity:** The capacity of the aquifer to transmit water{cite:p}`woessner2020`
+- **Transmissivity:** The capacity of the aquifer to transmit water{cite:p}`woessner2020_aquifer`
 - **Storativity:** The capacity of an aquifer to store or release water. The 
 storativity of a confined aquifer remains saturated and unchanged when there is
-a unit change in the potentiometric surface {cite:p}`woessner2020`.
+a unit change in the potentiometric surface {cite:p}`woessner2020_aquifer`.
 - **Radial Distance:** Distance from a pumping well to a point in the aquifer
 - **Confined Aquifer:** The aquifer is bounded above and below by impermeable
 layers, known as aquitards {cite:p}`theis1935`.
@@ -52,12 +52,19 @@ production and groundwater monitoring {cite:p}`flyriver_wellbore`.
 a well is influenced by the compressibility and volume of the fluid within the
 wellbore, particularly during the early stages of production or shut-in. This
 effect can lead to a time lag in the surface production rate compared to the
-actual rate at the sandface, complicating well test interpretations {cite:p}`testwells_storage`
+actual rate at the sandface, complicating well test interpretations 
+{cite:p}`testwells_storage`
 - **Well losses:** long-term water-level declines caused by sustained groundwater
 pumping {cite:p}`usgs_groundwater_depletion`.
-- **Recharge:**
-- **Leakage:**
-- **Boundary:**
+- **Recharge:** Groundwater recharge is a critical process that replenishes aquifers,
+ensuring the sustainability of water resources essential for agriculture,
+drinking, and ecosystem health. {cite:p}`john2024recharge`
+- **Leakage:** Groundwater seepage happens when water from the soil rises into
+the foundation or lower parts of your home through capillary action 
+{cite:p}`manjrekar_groundwater_seepage`
+- **Boundary:** refers to the physical or hydraulic limits that define how
+groundwater interacts with its surroundings, such as rivers, lakes, or
+impermeable layers {cite:p}`woessner2020_boundary`
 - **Positive Elapsed Time:**
 
 ## Established Project Assumptions
