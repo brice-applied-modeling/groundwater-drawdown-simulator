@@ -33,7 +33,7 @@ a unit change in the potentiometric surface (Woessner & Poeter, 2020).
 - **Isotropic:** An aquifer's hydraulic properties are the same in all directions at a given point. This implies that the hydraulic conductivity is independent of the direction of flow. In an isotropic aquifer, water will flow at the same rate in any direction, assuming the same hydraulic gradient (Freeze & Cherry, 1979).
 - **Theis Equation:** A method that provides a mathematical framework for predicting how water levels in a confined aquifer decline over time due to pumping from a well (LMNO Engineering, Research, and Software, Ltd., n.d.).
 - **Wellbore:** A cylindrical hole drilled into the earth's subsurface, serves as the crucial conduit for accessing subsurface resources, facilitating a wide array of operations ranging from oil and gas extraction to geothermal energy production and groundwater monitoring (Flyriver, n.d.).
-- **Wellbore Storage:**
+- **Wellbore Storage:** refers to the phenomenon where the pressure behavior in a well is influenced by the compressibility and volume of the fluid within the wellbore, particularly during the early stages of production or shut-in. This effect can lead to a time lag in the surface production rate compared to the actual rate at the sandface, complicating well test interpretations (Testwells, n.d.)
 - **Well losses:**
 - **Recharge:**
 - **Leakage:**
@@ -49,6 +49,7 @@ a unit change in the potentiometric surface (Woessner & Poeter, 2020).
 - Negligible wellbore storage, well losses, recharge, leakage, and boundary effects.
 - Drawdown evaluated at positive radial distances and positive elapsed times.
 
+## Fundamentals of Groundwater Flow
 
 
 ## References
@@ -83,3 +84,5 @@ https://www.flyriver.com/g/wellbore
 
 ---
 
+TestWells. (n.d.). *Wellbore storage*.
+https://testwells.com/wellbore-storage
