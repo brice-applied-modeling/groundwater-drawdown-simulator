@@ -1,4 +1,3 @@
-
 # Groundwater Drawdown Engineering Background
 
 The purpose of this document, is to research, understand, and document the
@@ -33,8 +32,9 @@ withdrawing the groundwater aquifer.
 storativity of a confined aquifer remains saturated and unchanged when there is
 a unit change in the potentiometric surface {cite:p}`woessner2020_aquifer`.
 - **Radial Distance:** Distance from a pumping well to a point in the aquifer
-- **Confined Aquifer:** The aquifer is bounded above and below by impermeable
-layers, known as aquitards {cite:p}`theis1935`.
+- **Confined Aquifer:** The aquifer is bounded above and below by low hydraulic
+conductivity layers, known as aquitards.  Aquitards can still transmit seepage,
+but it is generally low. {cite:p}`theis1935`.
 - **Homogeneous:** An aquifer's hydraulic properties are uniform throughout its
 volume {cite:p}`freeze1979`.
 - **Isotropic:** An aquifer's hydraulic properties are the same in all directions
@@ -48,24 +48,41 @@ pumping from a well {cite:p}`lmno_theis`.
 as the crucial conduit for accessing subsurface resources, facilitating a wide
 array of operations ranging from oil and gas extraction to geothermal energy
 production and groundwater monitoring {cite:p}`flyriver_wellbore`.
-- **Wellbore Storage:** refers to the phenomenon where the pressure behavior in
-a well is influenced by the compressibility and volume of the fluid within the
-wellbore, particularly during the early stages of production or shut-in. This
-effect can lead to a time lag in the surface production rate compared to the
-actual rate at the sandface, complicating well test interpretations 
-{cite:p}`testwells_storage`
-- **Well losses:** long-term water-level declines caused by sustained groundwater
-pumping {cite:p}`usgs_groundwater_depletion`.
-- **Recharge:** Groundwater recharge is a critical process that replenishes aquifers,
-ensuring the sustainability of water resources essential for agriculture,
-drinking, and ecosystem health. {cite:p}`john2024recharge`
-- **Leakage:** Groundwater seepage happens when water from the soil rises into
-the foundation or lower parts of your home through capillary action 
-{cite:p}`manjrekar_groundwater_seepage`
+- **Wellbore Storage:** Wellbore storage describes the temporary contribution
+of water stored within a well to the water being pumped, particularly during
+the early stages of pumping.
+
+When pumping begins, some of the discharged water initially comes from storage
+within the well itself rather than entirely from the surrounding aquifer.
+
+As pumping continues, the contribution from aquifer flow generally becomes more
+dominant.
+- **Groundwater Depletion:** long-term water-level declines caused by sustained
+groundwater pumping {cite:p}`usgs_groundwater_depletion`.
+- **Recharge:** Groundwater recharge is a critical process that replenishes
+aquifers, ensuring the sustainability of water resources essential for agriculture,
+drinking, and ecosystem health. {cite:p}`barlow2012`
+- **Leakage:** Leakage in a confined aquifer is water moving vertically through
+the confining layer above or below it, usually because the water pressure
+(hydraulic head) differs between the aquifer and a neighboring layer.
+
+The confining layer, often called an aquitard, is not perfectly impermeable, so
+water can slowly seep through it. Pumping can lower the aquifer’s water level
+and increase this seepage; water may leak into the aquifer from above or below,
+or out of it, depending on the head difference. Theis’s original equation assumes
+no such leakage; leaky-aquifer analyses use modified methods such as Hantush’s.
+{cite:p}`hydrosolve_theis`
 - **Boundary:** refers to the physical or hydraulic limits that define how
 groundwater interacts with its surroundings, such as rivers, lakes, or
 impermeable layers {cite:p}`woessner2020_boundary`
-- **Positive Elapsed Time:**
+- **Groundwater Age:** The age of groundwater refers to the time that has
+elapsed since a water particle entered the saturated zone as groundwater recharge.
+This concept is important for understanding the mean residence time, which
+indicates how long water remains in an aquifer before it is discharged.
+{cite:p}`cook2020`
+- **Well Losses:** In groundwater hydraulics, well losses refer to the
+additional hydraulic head losses associated with groundwater entering and
+moving through a pumping well.
 
 ## Established Project Assumptions
 
@@ -77,3 +94,5 @@ impermeable layers {cite:p}`woessner2020_boundary`
 - Drawdown evaluated at positive radial distances and positive elapsed times.
 
 ## Fundamentals of Groundwater Flow
+
+
